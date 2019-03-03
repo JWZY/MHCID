@@ -1,3 +1,6 @@
+//Arduino to p5.js code adapted from the tutorial on potentiometer: 
+https://medium.com/@yyyyyyyuan/tutorial-serial-communication-with-arduino-and-p5-js-cd39b3ac10ce
+
 const int led1Pin =  9; // pin number for LED output 
 const int sensorPin = A0; // pin number for sensing potentiometer
 int outputValue = 0;    // variable for indicating how bright the LED is
@@ -15,9 +18,9 @@ void loop() {
   Serial.write(outputValue);
   
   if (sensorValue >= 0) {
-    analogWrite(led1Pin, outputValue);  // turn the LED on with certain outputValue
+    analogWrite(led1Pin, outputValue);  // turn the LED on at specific output values
   } else{
-    digitalWrite(led1Pin, LOW);  // turn the LED off
+    digitalWrite(led1Pin, LOW);  // turn the LED off at specific output values
   }
   delay(10);
 }
