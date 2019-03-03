@@ -1,5 +1,5 @@
 //Arduino to p5.js code adapted from the tutorial on potentiometer: 
-https://medium.com/@yyyyyyyuan/tutorial-serial-communication-with-arduino-and-p5-js-cd39b3ac10ce
+//https://medium.com/@yyyyyyyuan/tutorial-serial-communication-with-arduino-and-p5-js-cd39b3ac10ce
 
 const int led1Pin =  9; // pin number for LED output 
 const int sensorPin = A0; // pin number for sensing potentiometer
